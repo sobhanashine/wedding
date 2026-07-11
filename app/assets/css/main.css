@@ -562,9 +562,25 @@ body {
   background:
     radial-gradient(circle at 82% 10%, rgba(216,208,220,.25), transparent 24rem),
     var(--silk);
+  display: grid;
+  grid-template-columns: minmax(240px, .72fr) minmax(0, 1.28fr);
+  column-gap: clamp(34px, 6vw, 110px);
+  align-items: start;
 }
 
-.project-grid { gap: 30px; grid-template-rows: 420px 390px 530px; }
+.portfolio-head {
+  grid-column: 1;
+  position: sticky;
+  top: 120px;
+  display: block;
+  margin: 0;
+  padding-top: 18px;
+  z-index: 4;
+}
+
+.portfolio-head > p { margin-top: 44px; }
+.portfolio .project-grid { grid-column: 2; grid-row: 1 / span 2; gap: 30px; grid-template-rows: 420px 390px 530px; }
+.portfolio > .button-outline { grid-column: 2; justify-self: start; margin-inline: 0; }
 .project-card { border-radius: 220px 220px 14px 14px; box-shadow: 0 25px 65px rgba(73,84,76,.12); }
 .project-card:nth-child(2), .project-card:nth-child(4) { border-radius: 14px 180px 14px 14px; }
 .project-card.project-wide { margin-inline: 8%; border-radius: 14px 240px 240px 14px; }
@@ -685,7 +701,11 @@ body {
   .hero-caption { right: 43px; bottom: 62px; }
   .petal-one { right: auto; left: 12%; top: 40%; }
   .petal-two { right: 82%; bottom: 7%; }
-  .project-grid { gap: 18px; grid-template-rows: repeat(4, 470px); }
+  .portfolio { display: block; }
+  .portfolio-head { position: static; display: grid; margin-bottom: 50px; padding-top: 0; }
+  .portfolio-head > p { margin-top: 0; }
+  .portfolio .project-grid { gap: 18px; grid-template-rows: repeat(4, 470px); }
+  .portfolio > .button-outline { margin-inline: auto; }
   .project-card, .project-card:nth-child(2), .project-card:nth-child(4), .project-card.project-wide { margin: 0; border-radius: 170px 170px 14px 14px; }
   .testimonial { min-height: 760px; }
   .testimonial::before { width: 130vw; height: 130vw; }
