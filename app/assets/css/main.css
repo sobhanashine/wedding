@@ -595,6 +595,21 @@ body {
 .gold-thread span, .step-dot i { background: #b98f86; }
 .step-dot { border-color: #b98f86; background: #eef0eb; }
 .step-no { color: #b98f86; }
+.step-no {
+  position: relative;
+  z-index: 3;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+  min-width: 54px;
+  padding: 2px 10px 5px;
+  margin-inline: -10px;
+  border-radius: 999px;
+  background: #eef0eb;
+  line-height: 1;
+  box-shadow: 0 0 0 5px #eef0eb;
+}
 
 .testimonial {
   background: #68776d;
