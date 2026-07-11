@@ -701,9 +701,11 @@ body {
 
 @media (max-width: 780px) {
   html,
-  body { max-width: 100%; overflow-x: clip; }
+  body { max-width: 100%; overflow-x: hidden; }
   .dream-glow,
   .orbit { display: none; }
+  .story::after,
+  .services::before { display: none; }
   .hero { display: flex; min-height: auto; }
   .hero-copy { min-height: 710px; padding-top: 92px; padding-left: 22px; }
   .hero h1 { font-size: clamp(43px, 12.5vw, 63px); }
@@ -711,9 +713,9 @@ body {
   .hero-visual { margin: 0; min-height: 690px; }
   .hero-image-wrap { inset: 35px 28px 45px; border-radius: 200px 200px 20px 20px; }
   .hero-image-wrap::after { border-radius: 188px 188px 14px 14px; }
-  .frame-bouquet { top: 0; right: 4px; width: 118px; height: 160px; }
-  .frame-table { left: 2px; bottom: 10px; width: 112px; height: 150px; }
-  .hero-seal { top: 8%; left: 6%; width: 88px; }
+  .frame-bouquet { top: 0; right: 14px; width: 118px; height: 160px; }
+  .frame-table { left: 14px; bottom: 10px; width: 112px; height: 150px; }
+  .hero-seal { top: 8%; left: 34px; width: 88px; }
   .hero-caption { right: 43px; bottom: 62px; }
   .petal-one { right: auto; left: 12%; top: 40%; }
   .petal-two { right: 82%; bottom: 7%; }
@@ -725,7 +727,9 @@ body {
   .portfolio > .button-outline { margin-inline: auto; }
   .project-card, .project-card:nth-child(2), .project-card:nth-child(4), .project-card.project-wide { margin: 0; border-radius: 170px 170px 14px 14px; }
   .testimonial { min-height: 760px; }
-  .testimonial::before { width: 130vw; height: 130vw; }
+  .testimonial::before { width: 100vw; height: 100vw; }
+  .testimonial::after { width: 74vw; height: 74vw; }
+  .consultation-flower { display: none; }
   .consultation-form { border-radius: 130px 130px 12px 12px; padding-top: 75px; }
 }
 
@@ -733,9 +737,9 @@ body {
   .hero-copy { min-height: 730px; }
   .hero-visual { min-height: 600px; }
   .hero-image-wrap { inset: 26px 18px 40px; }
-  .frame-bouquet { width: 102px; height: 145px; }
-  .frame-table { width: 98px; height: 135px; }
-  .hero-seal { top: 12%; width: 78px; }
+  .frame-bouquet { right: 16px; width: 102px; height: 145px; }
+  .frame-table { left: 16px; width: 98px; height: 135px; }
+  .hero-seal { top: 12%; left: 38px; width: 78px; }
   .project-grid { grid-template-rows: repeat(4, 400px); }
   .project-card, .project-card:nth-child(2), .project-card:nth-child(4), .project-card.project-wide { border-radius: 140px 140px 12px 12px; }
   .consultation-form { border-radius: 95px 95px 10px 10px; padding-top: 62px; }
