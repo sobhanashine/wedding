@@ -12,7 +12,7 @@ useHead({
     { rel: 'icon', href: '/favicon.ico' },
     { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
     { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
-    { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Lalezar&family=Vazirmatn:wght@300;400;500;600;700&display=swap' }
+    { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Lalezar&family=Noto+Nastaliq+Urdu:wght@400;500;600&family=Vazirmatn:wght@300;400;500;600;700&display=swap' }
   ]
 })
 

@@ -140,17 +140,38 @@ function submitForm() {
         id="top"
         class="hero section-pad"
       >
+        <div
+          class="dream-glow dream-glow-one"
+          aria-hidden="true"
+        />
+        <div
+          class="dream-glow dream-glow-two"
+          aria-hidden="true"
+        />
+        <div
+          class="petal petal-one"
+          aria-hidden="true"
+        />
+        <div
+          class="petal petal-two"
+          aria-hidden="true"
+        />
+        <div
+          class="petal petal-three"
+          aria-hidden="true"
+        />
         <div class="hero-copy">
           <p class="eyebrow hero-eyebrow">
-            <span /> هر عشق، یک روایت بی‌تکرار
+            <span /> برای عروسی‌هایی شبیه رویا
           </p>
           <h1>
-            ما فقط یک مراسم<br>
-            <em>نمی‌سازیم؛</em><br>
-            یک شب را ماندگار می‌کنیم.
+            عروسی‌تان را<br>
+            همان‌طور که<br>
+            <em>در رویا دیده‌اید</em><br>
+            زندگی کنید.
           </h1>
           <p class="hero-lead">
-            طراحی و اجرای صفر تا صد عروسی‌های لوکس؛ با جزئیاتی که از قصه شما شروع می‌شوند و تا آخرین لحظه، دقیق می‌مانند.
+            از اولین پین ذخیره‌شده تا لحظه‌ای که دست در دست هم وارد می‌شوید؛ تمام جزئیات این روز را از قصه شما می‌سازیم.
           </p>
           <div class="hero-actions">
             <a
@@ -171,6 +192,7 @@ function submitForm() {
             </div>
             <p><strong>بیش از ۸۰ روایت</strong><br>از اولین «بله» تا آخرین رقص</p>
           </div>
+          <span class="hero-script">your day, your kind of magic</span>
         </div>
 
         <div
@@ -202,6 +224,22 @@ function submitForm() {
               d="M60,60 m-43,0 a43,43 0 1,1 86,0 a43,43 0 1,1 -86,0"
             /></defs><text><textPath href="#sealPath">KHANEH SEFID • SINCE 2017 • </textPath></text><path d="M47 64c6-2 9-8 13-18 4 10 7 16 13 18M47 69h26" /></svg>
           </div>
+          <figure class="floating-frame frame-bouquet">
+            <img
+              src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?auto=format&fit=crop&w=520&q=86"
+              alt="دسته گل عروس با گل‌های سفید و رز"
+              fetchpriority="high"
+            >
+            <figcaption>the little things</figcaption>
+          </figure>
+          <figure class="floating-frame frame-table">
+            <img
+              src="https://images.unsplash.com/photo-1507504031003-b417219a0fde?auto=format&fit=crop&w=520&q=86"
+              alt="چیدمان میز عروسی رویایی"
+              loading="lazy"
+            >
+            <figcaption>made with love</figcaption>
+          </figure>
           <div class="hero-caption">
             <span>۰۱</span><p>هر جزئیات،<br>بخشی از قصه شماست.</p>
           </div>
@@ -226,6 +264,7 @@ function submitForm() {
               <span /> خانه سپید
             </p>
             <h2>مراسم شما<br><em>نباید شبیه هیچ‌کس</em><br>دیگر باشد.</h2>
+            <span class="handwritten-note">made from your story</span>
           </div>
           <div class="story-content reveal">
             <p class="story-intro">
@@ -339,6 +378,10 @@ function submitForm() {
       </section>
 
       <section class="testimonial section-pad">
+        <div
+          class="testimonial-photo"
+          aria-hidden="true"
+        />
         <div class="quote-mark reveal">
           “
         </div>
@@ -385,6 +428,10 @@ function submitForm() {
         id="consultation"
         class="consultation section-pad"
       >
+        <div
+          class="consultation-flower"
+          aria-hidden="true"
+        />
         <div class="consultation-copy reveal">
           <p class="eyebrow eyebrow-light">
             <span /> شروع یک روایت تازه
