@@ -1,36 +1,77 @@
-<script setup lang="ts">
+<script setup>
 useHead({
-  htmlAttrs: {
-    lang: 'fa',
-    dir: 'rtl'
-  },
   meta: [
-    { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-    { name: 'theme-color', content: '#f7f4ee' }
+    { name: 'viewport', content: 'width=device-width, initial-scale=1' }
   ],
   link: [
-    { rel: 'icon', href: '/favicon.ico' },
-    { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
-    { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
-    { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Lalezar&family=Noto+Nastaliq+Urdu:wght@400;500;600&family=Vazirmatn:wght@300;400;500;600;700&display=swap' }
-  ]
+    { rel: 'icon', href: '/favicon.ico' }
+  ],
+  htmlAttrs: {
+    lang: 'en'
+  }
 })
 
-const title = 'خانه سپید | تشریفات لوکس عروسی'
-const description = 'طراحی و اجرای صفر تا صد مراسم عروسی لوکس؛ از اولین ایده تا آخرین رقص، با یک تیم همراه و یک روایت منحصربه‌فرد.'
+const title = 'Nuxt Starter Template'
+const description = 'A production-ready starter template powered by Nuxt UI. Build beautiful, accessible, and performant applications in minutes, not hours.'
 
 useSeoMeta({
   title,
   description,
   ogTitle: title,
   ogDescription: description,
-  ogType: 'website',
+  ogImage: 'https://ui.nuxt.com/assets/templates/nuxt/starter-light.png',
   twitterCard: 'summary_large_image'
 })
 </script>
 
 <template>
-  <div id="app-root">
-    <NuxtPage />
-  </div>
+  <UApp>
+    <UHeader>
+      <template #left>
+        <NuxtLink to="/">
+          <AppLogo class="w-auto h-6 shrink-0" />
+        </NuxtLink>
+
+        <TemplateMenu />
+      </template>
+
+      <template #right>
+        <UColorModeButton />
+
+        <UButton
+          to="https://github.com/nuxt-ui-templates/starter"
+          target="_blank"
+          icon="i-simple-icons-github"
+          aria-label="GitHub"
+          color="neutral"
+          variant="ghost"
+        />
+      </template>
+    </UHeader>
+
+    <UMain>
+      <NuxtPage />
+    </UMain>
+
+    <USeparator icon="i-simple-icons-nuxtdotjs" />
+
+    <UFooter>
+      <template #left>
+        <p class="text-sm text-muted">
+          Built with Nuxt UI • © {{ new Date().getFullYear() }}
+        </p>
+      </template>
+
+      <template #right>
+        <UButton
+          to="https://github.com/nuxt-ui-templates/starter"
+          target="_blank"
+          icon="i-simple-icons-github"
+          aria-label="GitHub"
+          color="neutral"
+          variant="ghost"
+        />
+      </template>
+    </UFooter>
+  </UApp>
 </template>
